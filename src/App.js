@@ -38,7 +38,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contactus" component={Contact} />
         <Route exact path='/attractions/:id' component={oneAttraction} />
-        <Route component={page} />
+        <Route path="*" component={page} />
       </Switch>
       <Footer />
     </Router>
